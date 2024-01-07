@@ -44,7 +44,7 @@
     "@stdlib/assert-is-string-array": "^0.1.1",
     "@stdlib/random-array-tools-binary": "github:stdlib-js/random-array-tools-binary#main",
     "@stdlib/random-array-tools-nullary": "github:stdlib-js/random-array-tools-nullary#main",
-    "@stdlib/string-format": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1",
     "@stdlib/utils-constant-function": "^0.1.1",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.1.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
