@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+binaryFactory = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-binary-factory/tags). For example,
+
+```javascript
 binaryFactory = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var binaryFactory = require( 'path/to/vendor/umd/random-array-tools-binary-facto
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -530,7 +535,7 @@ var sz = random.byteLength;
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
