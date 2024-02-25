@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@deno/mod.js';
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.1-deno/mod.js';
 ```
 
 #### binaryFactory( prng, dtypes, dtype )
@@ -503,7 +503,7 @@ var sz = random.byteLength;
 ```javascript
 import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@deno/mod.js';
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.1-deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
