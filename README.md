@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-binaryFactory = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js' )
+binaryFactory = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var binaryFactory = require( 'path/to/vendor/umd/random-array-tools-binary-facto
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -530,7 +530,7 @@ var sz = random.byteLength;
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
