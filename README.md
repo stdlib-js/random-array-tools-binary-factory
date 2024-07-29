@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-binary-factory/tags). For example,
+
+```javascript
 import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.2-esm/index.mjs';
 ```
 
@@ -508,7 +513,7 @@ var sz = random.byteLength;
 
 import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.2-esm/index.mjs';
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@esm/index.mjs';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
