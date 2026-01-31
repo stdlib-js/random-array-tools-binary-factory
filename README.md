@@ -35,14 +35,32 @@ limitations under the License.
 
 > Create a factory function for generating pseudorandom values drawn from a binary PRNG.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-tools-binary-factory
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@esm/index.mjs';
+var binaryFactory = require( '@stdlib/random-array-tools-binary-factory' );
 ```
 
 #### binaryFactory( prng, dtypes, dtype )
@@ -50,7 +68,7 @@ import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-to
 Returns a factory function for generating pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -71,7 +89,7 @@ The function has the following parameters:
 Returns a function for generating pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -107,7 +125,7 @@ If provided PRNG parameters, the function returns a partially applied function f
 Returns an array of pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -133,7 +151,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -154,8 +172,8 @@ var v = random( 10, 2.0, 5.0, {
 Fills an array with pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
+var zeros = require( '@stdlib/array-zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -188,7 +206,7 @@ The method has the following parameters:
 Returns an array of pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -215,7 +233,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -241,8 +259,8 @@ v = random( 10, {
 Fills an array with pseudorandom values drawn from a binary PRNG.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
+var zeros = require( '@stdlib/array-zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -273,7 +291,7 @@ The method has the following parameters:
 The underlying pseudorandom number generator.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -292,7 +310,7 @@ var prng = random.PRNG;
 The value used to seed the underlying pseudorandom number generator.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -309,8 +327,8 @@ var seed = random.seed;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -331,7 +349,7 @@ var seed = random.seed;
 Length of underlying pseudorandom number generator seed.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -348,8 +366,8 @@ var len = random.seedLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -370,7 +388,7 @@ var len = random.seedLength;
 Writable property for getting and setting the underlying pseudorandom number generator state.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -387,8 +405,8 @@ var state = random.state;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -409,7 +427,7 @@ var state = random.state;
 Length of underlying pseudorandom number generator state.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -426,8 +444,8 @@ var len = random.stateLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -448,7 +466,7 @@ var len = random.stateLength;
 Size (in bytes) of underlying pseudorandom number generator state.
 
 ```javascript
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -465,8 +483,8 @@ var sz = random.byteLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var arcsine = require( '@stdlib/random-base-arcsine' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -500,15 +518,10 @@ var sz = random.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@esm/index.mjs';
+```javascript
+var arcsine = require( '@stdlib/random-base-arcsine' );
+var dtypes = require( '@stdlib/array-dtypes' );
+var binaryFactory = require( '@stdlib/random-array-tools-binary-factory' );
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
@@ -530,10 +543,6 @@ x = random( 10, 2.0, 5.0, {
     'dtype': 'generic'
 });
 // returns [...]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -557,7 +566,7 @@ x = random( 10, 2.0, 5.0, {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -574,7 +583,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -600,8 +609,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
