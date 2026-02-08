@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-binary-factory/tags). For example,
+
+```javascript
 import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.3-deno/mod.js';
 ```
 
@@ -503,7 +508,7 @@ var sz = random.byteLength;
 ```javascript
 import arcsine from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-arcsine@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@v0.2.3-deno/mod.js';
+import binaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-binary-factory@deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
